@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     SplashScreen.preventAutoHideAsync();
   }, []);
-  const [loaded] = useFonts({
+  useFonts({
     Inter: require('./assets/fonts/Inter.ttf'),
   });
   const _cacheResourcesAsync = async () => {
@@ -29,7 +29,7 @@ const App = () => {
     await new Promise((resolve) => {
       setTimeout(() => {
         resolve();
-      }, 5000);
+      }, 500);
     });
     toggle(true);
   };

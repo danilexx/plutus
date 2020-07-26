@@ -5,9 +5,11 @@ import CardInfo from '../../components/CardInfo';
 import { Container } from './styles';
 import Offers from '../../components/Offers';
 import Products from '../../components/Products';
+import UserHeader from '../../components/UserHeader';
 const Main = () => {
   return (
     <Container>
+      <UserHeader name="Rogério" />
       <Carousel />
       <CardInfo />
       <StatusBar style="auto" />
