@@ -28,6 +28,7 @@
     "react-dom": "~16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
     "react-native-anchor-carousel": "^3.1.2",
+    "react-native-calendars": "^1.300.0",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-reanimated": "~1.9.0",
     "react-native-safe-area-context": "~3.0.7",
@@ -46,6 +47,7 @@
     "@babel/core": "^7.8.6",
     "@types/react": "~16.9.41",
     "@types/react-native": "~0.62.13",
+    "@types/react-native-calendars": "^1.20.8",
     "@types/styled-components": "^5.1.1",
     "typescript": "~3.9.5"
   },

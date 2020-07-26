@@ -12,24 +12,38 @@ import { FontAwesome } from '@expo/vector-icons';
 import SpentSelector from '../../components/SpentSelector';
 import LimitSection from '../../components/LimitSection';
 import { Button } from '../../components/Button';
+import Page, { PageSeparator } from '../../components/Page';
+import { useNavigation } from '@react-navigation/native';
 
 const Main = () => {
+  const navigation = useNavigation();
   return (
-    <Container>
-      <Nav>
-        <Icon name="bell" notification={1} />
-        <Icon iconPack={FontAwesome} name="cog" />
-      </Nav>
-      <UserHeader name="Rogério" />
-      <SpentSelector />
-      <LimitSection />
-      <Button margin="10px 30px">Ver Calendario</Button>
+    <Page
+      nav={
+        <Nav title="Meus Cartões">
+          <Icon name="bell" notification={1} />
+          <Icon
+            iconPack={FontAwesome}
+            onPress={() => {
+              navigation.navigate('Preferences');
+            }}
+            name="cog"
+          />
+        </Nav>
+      }>
+      <PageSeparator />
+      {/* <Container> */}
+      {/* <UserHeader name="Rogério" /> */}
+      {/* <SpentSelector /> */}
+      {/* <LimitSection /> */}
+      {/* <Button margin="10px 30px">Ver Calendario</Button> */}
       <Carousel />
       <CardInfo />
       <StatusBar style="auto" />
       <Offers />
       <Products />
-    </Container>
+      {/* </Container> */}
+    </Page>
   );
 };
 

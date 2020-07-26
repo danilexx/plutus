@@ -6,6 +6,10 @@ export const Container = styled.View`
   justify-content: space-between;
   /* background-color: red; */
   padding: 25px 20px;
+  position: absolute;
+  top: 20px;
+  z-index: 50;
+  /* left: 0; */
 `;
 
 export const Title = styled.Text<{

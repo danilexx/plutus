@@ -10,6 +10,7 @@ import {
 } from './styles';
 import Nav from '../../components/Nav';
 import T from '../../components/T';
+import { useNavigation } from '@react-navigation/native';
 
 interface ItemType {
   quantity: number;

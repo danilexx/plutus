@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, CardIdentifier, Label, BoldLabel, Buttons } from './styles';
 import { Button } from '../Button';
+import { useNavigation } from '@react-navigation/native';
 
 const CardInfo = () => {
+  const navigation = useNavigation();
   return (
     <Container>
       <CardIdentifier>Cartão XPTO</CardIdentifier>
@@ -13,7 +15,12 @@ const CardInfo = () => {
       </Label>
       <Label>Vencimento 05/08/2020</Label>
       <Buttons>
-        <Button>Pagar Fatura</Button>
+        <Button
+          onPress={() => {
+            navigation.navigate('Receipt');
+          }}>
+          Pagar Fatura
+        </Button>
         <Button type="secondary">Gerar Boleto</Button>
       </Buttons>
     </Container>

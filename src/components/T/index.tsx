@@ -5,18 +5,21 @@ const T = styled.Text<{
   bold?: boolean;
   size?: number | string;
   align?: 'left' | 'center' | 'right';
+  width?: string | number;
 }>`
   font-family: Inter;
   color: ${(p) => p.color};
   font-weight: ${(p) => (p.bold ? 'bold' : 'normal')};
   font-size: ${(p) => p.size}px;
   text-align: ${(p) => p.align};
+  width: ${(p) => (p) => p.width};
 `;
 T.defaultProps = {
   color: '#333',
   bold: false,
   size: 14,
   align: 'left',
+  width: 'auto',
 };
 
 export default T;

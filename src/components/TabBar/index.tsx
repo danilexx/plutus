@@ -13,7 +13,6 @@ function TabBar({ state, descriptors, navigation }) {
   if (focusedOptions.tabBarVisible === false) {
     return null;
   }
-  console.log(state);
   const handlePress = (s) => {
     navigation.navigate(s);
   };
