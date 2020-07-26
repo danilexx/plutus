@@ -14,6 +14,7 @@ import LimitSection from '../../components/LimitSection';
 import { Button } from '../../components/Button';
 import Page, { PageSeparator } from '../../components/Page';
 import { useNavigation } from '@react-navigation/native';
+import Card from '../../components/Card';
 
 const Main = () => {
   const navigation = useNavigation();
@@ -42,6 +43,7 @@ const Main = () => {
       <StatusBar style="auto" />
       <Offers />
       <Products />
+      <Card type="submarinho" />
       {/* </Container> */}
     </Page>
   );

@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Dimensions } from 'react-native';
-import Card from './Card';
+import Card from '../Card';
 import { Wrapper } from './styles';
 
 import Carousel from 'react-native-anchor-carousel';
 
 const { width } = Dimensions.get('window');
 
-export type brand1Types = 'marisa' | 'c&a';
+export type brand1Types = 'marisa' | 'c&a' | 'supermercado' | 'submarinho';
 export type brand2Types = 'itaucard' | 'bradescard';
 export type brand3Types = 'mastercard' | 'visa';
 export interface CardType {
@@ -26,19 +26,19 @@ const data: CardType[] = [
   },
   {
     backgroundColor: '#FFBAE3',
-    brand1: 'c&a',
+    brand1: 'submarinho',
     brand2: 'bradescard',
     brand3: 'visa',
   },
   {
     backgroundColor: '#FFBAE3',
-    brand1: 'marisa',
+    brand1: 'supermercado',
     brand2: 'itaucard',
     brand3: 'mastercard',
   },
   {
     backgroundColor: '#FFBAE3',
-    brand1: 'c&a',
+    brand1: 'submarinho',
     brand2: 'bradescard',
     brand3: 'visa',
   },
@@ -63,10 +63,11 @@ const Slider = () => {
         renderItem={({ item, index }: { item: CardType; index: number }) => {
           return (
             <Card
-              card={item}
-              onPress={() => {
-                carouselRef.current?.scrollToIndex(index);
-              }}
+              // card={item}
+              type={item.brand1}
+              // onPress={() => {
+              //   carouselRef.current?.scrollToIndex(index);
+              // }}
             />
           );
         }}
