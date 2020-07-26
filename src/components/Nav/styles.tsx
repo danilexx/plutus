@@ -7,3 +7,18 @@ export const Container = styled.View`
   /* background-color: red; */
   padding: 25px 20px;
 `;
+
+export const Title = styled.Text<{
+  parentSizes: { width: number; height: number };
+}>`
+  position: absolute;
+  width: 200px;
+  font-family: Inter;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+  height: 30px;
+  top: ${(p) => p.parentSizes.height / 2 - 15}px;
+  left: ${(p) => p.parentSizes.width / 2 - 100}px;
+  text-align: center;
+`;

@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-native-community/eslint-config": "^2.0.0",
     "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.7.2",
     "@react-navigation/native": "^5.7.1",
     "@react-navigation/stack": "^5.7.1",
     "@wwdrew/react-native-numeric-textinput": "^1.1.0",
@@ -32,7 +33,9 @@
     "react-native-safe-area-context": "~3.0.7",
     "react-native-screens": "~2.9.0",
     "react-native-sideswipe": "^1.5.0",
+    "react-native-size-matters": "^0.3.0",
     "react-native-snap-carousel": "^4.0.0-beta.5",
+    "react-native-svg": "12.1.0",
     "react-native-web": "~0.11.7",
     "react-spring": "^8.0.27",
     "react-use": "^15.3.3",

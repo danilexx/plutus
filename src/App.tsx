@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     SplashScreen.preventAutoHideAsync();
   }, []);
-  useFonts({
+  const [loaded] = useFonts({
     Inter: require('./assets/fonts/Inter.ttf'),
   });
   const _cacheResourcesAsync = async () => {
@@ -26,15 +26,15 @@ const App = () => {
     // const cacheImages = images.map((image) => {
     //   return Asset.fromModule(image).downloadAsync();
     // });
-    await new Promise((resolve) => {
-      setTimeout(() => {
-        resolve();
-      }, 500);
-    });
+    // await new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     resolve();
+    //   }, 1400);
+    // });
     toggle(true);
   };
 
-  if (!isReady) {
+  if (!isReady || !loaded) {
     return <AnimatedSplash onLoad={_cacheResourcesAsync} />;
   }
 
