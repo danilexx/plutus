@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-anchor-carousel/src/carousel.js b/node_modules/react-native-anchor-carousel/src/carousel.js
+index 453373b..b1b8a0f 100644
+--- a/node_modules/react-native-anchor-carousel/src/carousel.js
++++ b/node_modules/react-native-anchor-carousel/src/carousel.js
+@@ -64,7 +64,7 @@ class Carousel extends Component {
+     onScrollEnd(data[index], index);
+     this.currentIndex = index;
+     setTimeout(() => {
+-      this._scrollView.getNode().scrollToOffset({
++      this._scrollView.scrollToOffset({
+         offset:
+           index * (itemWidth + separatorWidth) +
+           this.halfItemWidth -

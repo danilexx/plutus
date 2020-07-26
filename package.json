@@ -1,24 +1,39 @@
 {
+  "name": "plutus",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "postinstall": "patch-package"
   },
   "dependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
+    "eslint": "^7.5.0",
     "expo": "~38.0.8",
+    "expo-font": "~8.2.1",
     "expo-status-bar": "^1.0.2",
+    "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "^2.0.5",
     "react": "~16.11.0",
     "react-dom": "~16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
-    "react-native-web": "~0.11.7"
+    "react-native-anchor-carousel": "^3.1.2",
+    "react-native-sideswipe": "^1.5.0",
+    "react-native-snap-carousel": "^4.0.0-beta.5",
+    "react-native-web": "~0.11.7",
+    "react-spring": "^8.0.27",
+    "react-use-gesture": "^7.0.15",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@types/react": "~16.9.41",
     "@types/react-native": "~0.62.13",
+    "@types/styled-components": "^5.1.1",
     "typescript": "~3.9.5"
   },
   "private": true
