@@ -1,12 +1,6 @@
 import React from 'react';
-import {
-  Container,
-  CardIdentifier,
-  Label,
-  BoldLabel,
-  Buttons,
-  Button,
-} from './styles';
+import { Container, CardIdentifier, Label, BoldLabel, Buttons } from './styles';
+import { Button } from '../Button';
 
 const CardInfo = () => {
   return (
@@ -17,6 +11,7 @@ const CardInfo = () => {
       <Label>
         Limite Disponível: <BoldLabel>R$ 500,00</BoldLabel>
       </Label>
+      <Label>Vencimento 05/08/2020</Label>
       <Buttons>
         <Button>Pagar Fatura</Button>
         <Button type="secondary">Gerar Boleto</Button>

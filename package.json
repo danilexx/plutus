@@ -14,6 +14,7 @@
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.7.1",
     "@react-navigation/stack": "^5.7.1",
+    "@wwdrew/react-native-numeric-textinput": "^1.1.0",
     "eslint": "^7.5.0",
     "expo": "~38.0.8",
     "expo-font": "~8.2.1",

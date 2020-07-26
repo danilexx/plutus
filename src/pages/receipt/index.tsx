@@ -2,13 +2,14 @@ import React from 'react';
 import {
   Container,
   Header,
-  T,
   Row,
   Group,
   Column,
   Separator,
   Ticket,
 } from './styles';
+import Nav from '../../components/Nav';
+import T from '../../components/T';
 
 interface ItemType {
   quantity: number;
@@ -44,6 +45,7 @@ const data: ItemType[] = [
 const Receipt = () => {
   return (
     <Container>
+      <Nav />
       <Header>
         <T color="#666666">Nota Fiscal</T>
         <T bold size="22">

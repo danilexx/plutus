@@ -38,7 +38,7 @@ export const LittleButton = styled(
     </TouchableOpacity>
   ),
 )`
-  background-color: #091eba;
+  background-color: #00094d;
   padding: 5px 10px;
   justify-content: center;
   align-items: center;

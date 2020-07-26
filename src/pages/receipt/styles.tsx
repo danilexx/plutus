@@ -23,23 +23,6 @@ export const Row = styled.View`
   margin: 8px 0;
 `;
 
-export const T = styled.Text<{
-  color?: string;
-  bold?: boolean;
-  size?: number | string;
-}>`
-  font-family: Inter;
-  color: ${(p) => p.color};
-  font-weight: ${(p) => (p.bold ? 'bold' : 'normal')};
-  font-size: ${(p) => p.size}px;
-  /* text-align: center; */
-`;
-T.defaultProps = {
-  color: '#333',
-  bold: false,
-  size: 14,
-};
-
 export const Group = styled.View`
   flex-direction: row;
 `;
