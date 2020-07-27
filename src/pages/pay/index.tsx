@@ -7,9 +7,7 @@ import { accounts } from '../../pages/banks';
 import T from '../../components/T';
 
 const Pay = () => {
-  const handlePress = () => {
-    console.log('aaa');
-  };
+  const handlePress = () => {};
   return (
     <Page nav={<Nav title="Pagar Boleto" />}>
       <PageSeparator />

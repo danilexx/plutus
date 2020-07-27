@@ -10,7 +10,6 @@ import {
 } from './styles';
 
 const Offer = ({ item: { img, txt } }) => {
-  console.log(img, txt);
   return (
     <Container>
       <ExampleImage source={img} />

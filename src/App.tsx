@@ -26,11 +26,11 @@ const App = () => {
     // const cacheImages = images.map((image) => {
     //   return Asset.fromModule(image).downloadAsync();
     // });
-    // await new Promise((resolve) => {
-    //   setTimeout(() => {
-    //     resolve();
-    //   }, 1400);
-    // });
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, 1300);
+    });
     toggle(true);
   };
 

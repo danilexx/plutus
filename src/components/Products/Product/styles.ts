@@ -9,9 +9,7 @@ export const Container = styled.TouchableOpacity`
   align-items: center;
 `;
 
-export const Image = styled.Image.attrs({
-  source: require('./assets/shirt.png'),
-})`
+export const Image = styled.Image`
   width: 40px;
   height: 40px;
   resize-mode: contain;
