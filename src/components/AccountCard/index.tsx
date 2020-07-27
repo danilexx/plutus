@@ -35,10 +35,11 @@ const getBank = (bank: number) => {
 
 const AccountCard: React.FC<Props> = ({
   info: { value, agency, bank, account },
+  ...props
 }) => {
   const { image, bankServices, bankName } = getBank(bank);
   return (
-    <Container>
+    <Container {...props}>
       <BankImage source={image} />
       <Info>
         <Row>

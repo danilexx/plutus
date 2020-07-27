@@ -21,11 +21,7 @@ function TabBar({ state, descriptors, navigation }) {
       <TouchableOpacity onPress={() => handlePress('Calendar')}>
         <CalendarIcon active={state.index === 2} />
       </TouchableOpacity>
-      <TouchableOpacity
-        style={{
-          transform: [{ translateY: -38 }],
-        }}
-        onPress={() => handlePress('Home')}>
+      <TouchableOpacity onPress={() => handlePress('Home')}>
         <CardIcon active={state.index === 0} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => handlePress('Profile')}>

@@ -10,7 +10,7 @@ export interface BankType {
   value: number;
 }
 
-const accounts: BankType[] = [
+export const accounts: BankType[] = [
   {
     bank: 341,
     account: '12345-6',

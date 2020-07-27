@@ -43,7 +43,6 @@ const Main = () => {
       <StatusBar style="auto" />
       <Offers />
       <Products />
-      <Card type="submarinho" />
       {/* </Container> */}
     </Page>
   );

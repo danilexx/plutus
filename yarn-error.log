@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-calendars
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
 
 PATH: 
   C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;c:\docker;C:\Users\danil\AppData\Local\Microsoft\WindowsApps;C:\Users\danil\AppData\Roaming\npm;C:\Users\danil\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\danil\AppData\Local\Yarn\bin;C:\docker;
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\danil\Documents\GitHub\plutus\node_modules\@babel\compat-data\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\danil\Documents\GitHub\plutus\node_modules\react-universal-interface\lib'
 
 npm manifest: 
   {
@@ -34,12 +34,15 @@ npm manifest:
       "@react-navigation/bottom-tabs": "^5.7.2",
       "@react-navigation/native": "^5.7.1",
       "@react-navigation/stack": "^5.7.1",
+      "@unform/core": "^2.1.3",
+      "@unform/mobile": "^2.1.3",
       "@wwdrew/react-native-numeric-textinput": "^1.1.0",
       "eslint": "^7.5.0",
       "expo": "~38.0.8",
       "expo-font": "~8.2.1",
       "expo-splash-screen": "^0.3.1",
       "expo-status-bar": "^1.0.2",
+      "firebase": "7.9.0",
       "patch-package": "^6.2.2",
       "postinstall-postinstall": "^2.1.0",
       "prettier": "^2.0.5",
@@ -47,7 +50,9 @@ npm manifest:
       "react-dom": "~16.11.0",
       "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
       "react-native-anchor-carousel": "^3.1.2",
+      "react-native-calendars": "^1.300.0",
       "react-native-gesture-handler": "~1.6.0",
+      "react-native-masked-text": "^1.13.0",
       "react-native-reanimated": "~1.9.0",
       "react-native-safe-area-context": "~3.0.7",
       "react-native-screens": "~2.9.0",
@@ -55,6 +60,7 @@ npm manifest:
       "react-native-size-matters": "^0.3.0",
       "react-native-snap-carousel": "^4.0.0-beta.5",
       "react-native-svg": "12.1.0",
+      "react-native-vector-icons": "^7.0.0",
       "react-native-web": "~0.11.7",
       "react-spring": "^8.0.27",
       "react-use": "^15.3.3",
@@ -65,6 +71,7 @@ npm manifest:
       "@babel/core": "^7.8.6",
       "@types/react": "~16.9.41",
       "@types/react-native": "~0.62.13",
+      "@types/react-native-calendars": "^1.20.8",
       "@types/styled-components": "^5.1.1",
       "typescript": "~3.9.5"
     },
@@ -1434,6 +1441,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
     integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
   
+  "@types/react-native-calendars@^1.20.8":
+    version "1.20.8"
+    resolved "https://registry.yarnpkg.com/@types/react-native-calendars/-/react-native-calendars-1.20.8.tgz#5d2055dd37f56cd2cee7bf385ee63efdea6badb8"
+    integrity sha512-VSZEzh+tBiHdo/ZRaLk18f8u7jS/o66rhhsSNPEUpSAYXxXBeOCl5fdJ6CI1YAnX7LWZ0cPRuhwQ1lneje4RwA==
+    dependencies:
+      "@types/react" "*"
+      "@types/react-native" "*"
+      "@types/xdate" "*"
+  
   "@types/react-native@*":
     version "0.63.2"
     resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.2.tgz#428a4d71351ccbc31ab170b5f32477c7ce78dfd7"
@@ -1470,6 +1486,11 @@ Lockfile:
       "@types/react" "*"
       "@types/react-native" "*"
       csstype "^2.2.0"
+  
+  "@types/xdate@*":
+    version "0.8.30"
+    resolved "https://registry.yarnpkg.com/@types/xdate/-/xdate-0.8.30.tgz#50ac1ce7d6e4c0d21a61e45d23653f494f2186bf"
+    integrity sha512-dEPW/RQBM7lyhcR0/3yG23aXkSfE26tR0AIB+DU/NmShnW5nv5rRffdJ2U+4FTTQyajz8wD9MQbPu4A/oKl/ig==
   
   "@types/yargs-parser@*":
     version "15.0.0"
@@ -3704,7 +3725,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
     integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
   
-  hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
+  hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.1:
     version "3.3.2"
     resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
     integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -3760,6 +3781,11 @@ Lockfile:
     version "3.3.0"
     resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.3.0.tgz#1aef225517836bcdf7f2a2de2600c79ff0269266"
     integrity sha512-HR7EVodfFUdQCTIeySw+WDRFJlPcLOJbXfwwZ7Oom6tjsvZ3bOkCDJHehQC3nxJrv7+f9XecwazynjU8e4Vw3Q==
+  
+  immutable@^4.0.0-rc.12:
+    version "4.0.0-rc.12"
+    resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.0.0-rc.12.tgz#ca59a7e4c19ae8d9bf74a97bdf0f6e2f2a5d0217"
+    integrity sha512-0M2XxkZLx/mi3t8NVwIm1g8nHoEmM9p9UBl/G9k4+hm0kBgOVdMV/B3CY5dQ8qG8qc80NN4gDV4HQv6FTJ5q7A==
   
   import-fresh@^2.0.0:
     version "2.0.0"
@@ -4835,6 +4861,11 @@ Lockfile:
     dependencies:
       minimist "^1.2.5"
   
+  moment@^2.24.0:
+    version "2.27.0"
+    resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
+    integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
+  
   ms@2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -5530,6 +5561,19 @@ Lockfile:
       invariant "^2.2.4"
       use-subscription "^1.0.0"
   
+  react-native-calendars@^1.300.0:
+    version "1.300.0"
+    resolved "https://registry.yarnpkg.com/react-native-calendars/-/react-native-calendars-1.300.0.tgz#ddd3941a0e01c9256a5aa0c44f615161bb9e664f"
+    integrity sha512-GOSaF+I24+cK5uxUfw85LEwskCj6Cpi5Cnm3OXdXexMer9hg0FlJ6AYlDrvu0ck0b9yAFdQTxExt64u1wkh+gw==
+    dependencies:
+      hoist-non-react-statics "^3.3.1"
+      immutable "^4.0.0-rc.12"
+      lodash "^4.17.15"
+      moment "^2.24.0"
+      prop-types "^15.5.10"
+      react-native-swipe-gestures "^1.0.5"
+      xdate "^0.8.0"
+  
   react-native-gesture-handler@~1.6.0:
     version "1.6.1"
     resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.6.1.tgz#678e2dce250ed66e93af409759be22cd6375dd17"
@@ -5587,6 +5631,11 @@ Lockfile:
     dependencies:
       css-select "^2.1.0"
       css-tree "^1.0.0-alpha.39"
+  
+  react-native-swipe-gestures@^1.0.5:
+    version "1.0.5"
+    resolved "https://registry.yarnpkg.com/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz#a172cb0f3e7478ccd681fd36b8bfbcdd098bde7c"
+    integrity sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw==
   
   react-native-web@~0.11.7:
     version "0.11.7"
@@ -6968,6 +7017,11 @@ Lockfile:
     dependencies:
       simple-plist "^1.1.0"
       uuid "^7.0.3"
+  
+  xdate@^0.8.0:
+    version "0.8.2"
+    resolved "https://registry.yarnpkg.com/xdate/-/xdate-0.8.2.tgz#d7b033c00485d02695baf0044f4eacda3fc961a3"
+    integrity sha1-17AzwASF0CaVuvAET06s2j/JYaM=
   
   xml-js@^1.6.11:
     version "1.6.11"

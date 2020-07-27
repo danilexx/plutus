@@ -8,12 +8,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TabBar from '../components/TabBar';
 import Profile from './profile';
 import Calendar from './calendar';
+import Pay from './pay';
 
 const Tabs = createBottomTabNavigator();
 const Stack = createStackNavigator();
 const Routes = () => {
   return (
-    <Stack.Navigator headerMode="none">
+    <Stack.Navigator headerMode="none" initialRouteName="Main">
       <Stack.Screen name="Main">
         {() => (
           <Tabs.Navigator
@@ -33,6 +34,7 @@ const Routes = () => {
       <Stack.Screen name="Receipt" component={Receipt} />
       <Stack.Screen name="Banks" component={Banks} />
       <Stack.Screen name="Preferences" component={Preferences} />
+      <Stack.Screen name="Pay" component={Pay} />
     </Stack.Navigator>
   );
 };

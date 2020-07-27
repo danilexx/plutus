@@ -99,12 +99,12 @@ const previous = [
   },
 ];
 
-const mapper = ({ value, date, provider, status }) => {
+const mapper = ({ value, date, provider, status }, index) => {
   const basicColor = status === 'Vencida' ? '#CC0000' : '#333';
   const statusColor =
     status === 'Vencida' ? '#CC0000' : status === 'Paga' ? '#8BCC19' : '#333';
   return (
-    <Row>
+    <Row key={index}>
       <T color={basicColor} width="90px" bold>
         {provider}
       </T>

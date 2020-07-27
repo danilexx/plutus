@@ -6,13 +6,15 @@ const T = styled.Text<{
   size?: number | string;
   align?: 'left' | 'center' | 'right';
   width?: string | number;
+  margin?: string;
 }>`
   font-family: Inter;
   color: ${(p) => p.color};
   font-weight: ${(p) => (p.bold ? 'bold' : 'normal')};
   font-size: ${(p) => p.size}px;
   text-align: ${(p) => p.align};
-  width: ${(p) => (p) => p.width};
+  width: ${(p) => p.width};
+  margin: ${(p) => p.margin};
 `;
 T.defaultProps = {
   color: '#333',
@@ -20,6 +22,7 @@ T.defaultProps = {
   size: 14,
   align: 'left',
   width: 'auto',
+  margin: 0,
 };
 
 export default T;
