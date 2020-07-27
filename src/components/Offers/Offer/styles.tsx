@@ -13,7 +13,7 @@ export const Info = styled.View`
   padding: 0 20px;
 `;
 
-export const ExampleImage = styled.View`
+export const ExampleImage = styled.Image`
   background-color: grey;
   height: 200px;
   /* width: 150px; */

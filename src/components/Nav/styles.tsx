@@ -25,4 +25,6 @@ export const Title = styled.Text<{
   top: ${(p) => p.parentSizes.height / 2 - 15}px;
   left: ${(p) => p.parentSizes.width / 2 - 100}px;
   text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 500px;
 `;

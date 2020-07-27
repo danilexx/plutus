@@ -12,6 +12,7 @@ const Preferences = () => {
   const navigation = useNavigation();
   return (
     <Page
+      separator={false}
       nav={
         <Nav title="Preferências">
           <Icon

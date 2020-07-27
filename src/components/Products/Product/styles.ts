@@ -11,7 +11,11 @@ export const Container = styled.TouchableOpacity`
 
 export const Image = styled.Image.attrs({
   source: require('./assets/shirt.png'),
-})``;
+})`
+  width: 40px;
+  height: 40px;
+  resize-mode: contain;
+`;
 
 const BaseLabel = styled.Text<{ align?: string }>`
   font-family: 'Inter';

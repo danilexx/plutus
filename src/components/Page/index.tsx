@@ -10,15 +10,15 @@ export const PageSeparator = styled.View`
 `;
 export const Wrapper = styled(SafeAreaView)`
   flex: 1;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 `;
 
-const Page = ({ nav, children }) => {
+const Page = ({ nav, children, separator = true }) => {
   return (
     <Wrapper>
       {nav && nav}
       <Container>{children}</Container>
-      <PageSeparator />
+      {separator && <PageSeparator />}
     </Wrapper>
   );
 };

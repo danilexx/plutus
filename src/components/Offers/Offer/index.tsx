@@ -9,12 +9,13 @@ import {
   LittleButton,
 } from './styles';
 
-const Offer = () => {
+const Offer = ({ item: { img, txt } }) => {
+  console.log(img, txt);
   return (
     <Container>
-      <ExampleImage />
+      <ExampleImage source={img} />
       <Info>
-        <Descount>40% de desconto!</Descount>
+        <Descount>{txt}</Descount>
         <BottomSection>
           <Site>xpto.com.br</Site>
           <LittleButton>Comprar</LittleButton>

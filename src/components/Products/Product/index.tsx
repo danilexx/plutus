@@ -8,17 +8,17 @@ import {
   RightArrow,
 } from './styles';
 
-const Product = () => {
+const Product = ({ product: { section, card, date, value, image } }) => {
   return (
     <Container>
-      <Image />
+      <Image source={image} />
       <Column>
-        <SubLabel>Roupas</SubLabel>
-        <Label>Lojas</Label>
+        <SubLabel>{section}</SubLabel>
+        <Label>{card}</Label>
       </Column>
       <Column>
-        <SubLabel align="right">12 Jul</SubLabel>
-        <Label align="right">R$ 100,00</Label>
+        <SubLabel align="right">{date}</SubLabel>
+        <Label align="right">{value}</Label>
       </Column>
       <RightArrow />
     </Container>
